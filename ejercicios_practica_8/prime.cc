@@ -1,4 +1,4 @@
-/* Escriba un programa (prime.cc) que tome por línea de comandos un número natural, (N) e imprima en pantalla el n-ésimo número primo.*
+/* Escriba un programa (prime.cc) que tome por línea de comandos un número natural, (N) e imprima en pantalla el n-ésimo número primo. *
 
 * Universidad de La Laguna
 
@@ -16,7 +16,7 @@
   
 * @author José Luis Arribas Rodríguez <alu0101416700@ull.edu.es>
   
-* @copyright José Luis Arribas Rodríguez 2020
+* @copyright José Luis Arribas Rodríguez (2020)
   
 * @version 1.0
   
@@ -32,7 +32,9 @@
 #include "funciones.h"
 
 
-int main () {
+int main ()
+
+{
     
   
   int number;
@@ -94,4 +96,4 @@ int main () {
   return 0;
   
     
-  }
+}

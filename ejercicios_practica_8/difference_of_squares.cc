@@ -1,4 +1,4 @@
-/* Escriba un programa (difference_of_squares.cc) que tome como parámetro pasado por línea de comandos un número natural (N), e imprima en pantalla la diferencia entre el cuadrado de la suma de los primeros (N) números naturales y la suma de los cuadrados de esos mismos números.*
+/* Escriba un programa (difference_of_squares.cc) que tome como parámetro pasado por línea de comandos un número natural (N), e imprima en pantalla la diferencia entre el cuadrado de la suma de los primeros (N) números naturales, y la suma de los cuadrados de esos mismos números. *
 
 * Universidad de La Laguna
 
@@ -16,7 +16,7 @@
 
 * @author José Luis Arribas Rodríguez <alu0101416700@ull.edu.es>
 
-* @copyright José Luis Arribas Rodríguez 2020
+* @copyright José Luis Arribas Rodríguez (2020)
 
 * @version 1.0
 
@@ -32,7 +32,9 @@
 #include "funciones.cc"
 
 
-int main () {
+int main () 
+
+{
       
   
   int number;
@@ -75,4 +77,4 @@ int main () {
   return 0;
   
     
-  }
+}

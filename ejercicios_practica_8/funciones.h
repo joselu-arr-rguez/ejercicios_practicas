@@ -1,4 +1,4 @@
-/* Escriba un programa (funciones.h) que contenga las declaraciones de las diferentes funciones que se utilizan en el programa principal para resolver el ejercicio en cuestión.*
+/* Escriba un programa (funciones.h) que contenga las declaraciones de las diferentes funciones que se utilizan en el programa principal para resolver el ejercicio en cuestión. *
 
 * Universidad de La Laguna
 
@@ -16,7 +16,7 @@
   
 * @author José Luis Arribas Rodríguez <alu0101416700@ull.edu.es>
   
-* @copyright José Luis Arribas Rodríguez 2020
+* @copyright José Luis Arribas Rodríguez (2020)
   
 * @version 1.0
   
@@ -28,6 +28,7 @@
 int SumSquares (int number);
 
 int SquareSum (int number);
+
 
 double Average (int N, double vector []);
 
