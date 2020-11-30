@@ -108,3 +108,78 @@ int SquareSum (int number) {
 
 
 }
+
+
+double Average (int N, double vector []) {
+
+
+double average;
+
+double sum;
+
+
+for (int i = 0; i < N; i++)
+{
+  sum += vector [i]; 
+}
+average = sum / N;
+
+return average;
+
+
+
+}
+
+double FindHigher (int N,double vector []) {
+
+double higher = vector [0];
+
+for (int i = 1; i < N; i++)
+{
+  if (higher < vector [i])
+  {
+    higher = vector [i];
+  }
+  
+}
+return higher;
+
+
+}
+
+double FindMinimum (int N, double vector [])
+
+{
+double minimum = vector [0];
+
+for (int i = 1; i < N; i++)
+{
+  if (minimum > vector [i])
+  {
+    minimum = vector [i];
+  }
+  
+}
+return minimum;
+
+
+}
+
+double StandardDeviation (int N, double vector []){
+
+  double variance, deviation;
+
+  double average = Average (N, vector);
+
+for (int i = 0; i < N; i++)
+{
+ 
+variance = variance + pow ((vector [i] - average), 2);
+  
+}
+
+deviation = sqrt (variance / N - 1);
+
+return deviation;
+
+}

@@ -28,3 +28,11 @@
 int SumSquares (int number);
 
 int SquareSum (int number);
+
+double Average (int N, double vector []);
+
+double FindHigher (int N, double vector []);
+
+double FindMinimum (int N, double vector []);
+
+double StandardDeviation (int N, double vector []);
