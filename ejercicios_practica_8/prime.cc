@@ -32,6 +32,9 @@
 #include "funciones.h"
 
 
+using namespace std;
+
+
 int main ()
 
 {
@@ -40,9 +43,9 @@ int main ()
   int number;
   
   
-  std:: cout << "Enter a number to calculate its primes: ";
+  cout << "Enter a number to calculate its primes: ";
   
-  std:: cin >> number;
+  cin >> number;
   
   
   int x;
@@ -90,7 +93,7 @@ int main ()
   }
   
   
-  std:: cout << vector [number - 1] << "\n";  
+  cout << vector [number - 1] << "\n";  
   
   
   return 0;

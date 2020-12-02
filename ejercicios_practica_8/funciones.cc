@@ -49,7 +49,7 @@ int SumSquares (int number)
   int square;
   
   
-  // Declaramos un bucle "for", que recogerá los números que sean menores que la variable "int" (llamada "número") hasta llegar a este, el cuál sumará los cuadrados de los números.
+  // We declare a "for" loop, which will collect the numbers that are less than the variable of the "int" type previously called "number", until it reaches it. This will then add the squares of the numbers.
   
   for (int i = 1; i <= number; i++) 
   
@@ -58,39 +58,39 @@ int SumSquares (int number)
   square = i * i;
   
   
-  // We put a (+=) and equal (sum = sum + square).
+  // We put a (+ =) and say that (sum = sum + square).
   
   sum += square;
     
   }
   
   
-  // We return the "sum" variable since the function returns an integer.
+  // We declare a "return" statement, to return the variable of type "int", which we had denoted by "sum", since the function returns an integer.
   
   return sum;
   
   
 }
 
- 
-// We declare the variables that we are going to use, both variables (int).
+
+// We declare the variables that we are going to use, both variables of type "int".
 
 int SquareSum (int number) 
 
 {
   
   
-  // We declare a variable of the type integer (int), which we call "sum" and we initialize to (0).
+  // We declare a variable of type "int", which we call "sum" and we declare it to (0).
   
   int sum = 0;
   
   
-  // We declare a variable of the type integer (int), which we call "square".
+  // We declare a variable of type "int", which we call "square".
   
   int square;
   
   
-  // We declare a (for) and add all the numbers, and then square the result. Returning as the last result the result of the square.
+  // We declare a "for" loop, which will add all the numbers, and then square the result. Returning this to us as the last result.
   
   for (int i = 1; i <= number; i++)
   
@@ -99,14 +99,14 @@ int SquareSum (int number)
   sum += i;
   
     
-  // We declare the function (pow) that says that the first number is the base of the exponent and the second number, in this case (2), is the exponent.
+  // We declare the function "pow", which tells us that the first element of the parentheses (in this case it is the result of the sum, made earlier) is the base of the exponent. And the second number in the parentheses (in this case the (2)), is the exponent.
   
   square = pow (sum, 2);
   
   }
   
   
-  // We return the "square" variable since the function returns an integer.
+  // We declare a "return" statement, which will return the variable of the type "int", which we had called "square", since the function returns an integer.
   
   return square;
   
@@ -114,24 +114,24 @@ int SquareSum (int number)
 }
 
 
-// We declare the average function, to which we pass the size of the vector (N) as an input parameter, using a variable (int) and the vector (N) itself. This function will return a variable (double), which will be the result of the average.
+// We declare the average function, to which we pass the size of the vector (N) as an input parameter, using a variable of type "int" and the vector (N) itself. This function will return a variable of the type "double", which will be the result of the average.
 
 double Average (int N, double vector []) 
 
 {
   
   
-  // We declare a variable (double), which we call "average".
+  // We declare a variable of type "double", which we call "average".
   
   double average;
   
   
-  // We declare a variable (double), which we call "sum".
+  // We declare a variable of type "double", which we call "sum".
   
   double sum;
   
 
-  // We declare a loop (for), to go through the vector position by position, inside it, we save in the variable (int) called "sum", the result of adding all the elements of the vector.
+  // We declare a loop (for), which will go through the vector, position by position. Inside this it will save in the variable of the type "int" called "sum", the result of adding all the elements of the vector.
   
   for (int i = 0; i < N; i++)
   
@@ -142,12 +142,12 @@ double Average (int N, double vector [])
   }
   
   
-  // Outside the (for) loop we carry out the average operation, and store it in the variable (double) which we had called "average" (with the same name).
+  // We declare the average operation, which will be stored in the variable of type "double", which we had called "average".
   
   average = sum / N;
   
   
-  // We declare a statement (return), which returns the result of the previously made average.
+  // We declare a statement (return), which will return the result of the average.
   
   return average;
   

@@ -42,63 +42,45 @@
 
 #include "funciones.cc"
 
-
 using namespace std;
 
 
-int main ()
+
+
+int main () 
 
 {
-          
+
+  string first;
+
+  string last; 
   
-  int N;
+  const int kComponents = 10;
+
+ 
+
+  cout << "Write something ..." << "\n";
+
+  string word;
+
+  getline(cin, word);
+
+  int lon = word.length ();
+
+  char vector [kComponents];
+
+
   
-  int M;
-  
-  int P;
-  
-  
-  cout << "Enter the number of vector elements: ";
-  
-  cin >> N;
-  
-  
-  cout << "Enter the minimum range of the vector: ";
-  
-  cin >> M;
-  
-  
-  cout << "Enter the maximum range of the vector: ";
-  
-  cin >> P;
-  
-  
-  double vector [N];
-  
-  double value;
-  
-  
-  for (int i = 0; i < N; i++)
-  
+  for (int i = 0; i <= kComponents; i++)
   {
-    
-    value = M + rand () % P;
-    
-    vector [i] = value;
-    
-    cout << vector [i] << " ";
-    
+    vector[i]=word[i];
+
+    cout<<vector[i];
   }
   
   
-  cout << "The result of the average is: " << Average (N, vector) << "\n";
-  
-  cout << "The biggest number in the vector is: " << FindHigher (N, vector) << "\n";
-  
-  cout << "The smallest number in the vector is: " << FindMinimum (N, vector) << "\n";
-  
-  cout << "The standard deviation in the vector is: " << StandardDeviation (N, vector) << "\n";
-  
+  cout << "The size of vector is:  " << lon;
+
   
   return 0;
   

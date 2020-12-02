@@ -32,6 +32,9 @@
 #include "funciones.cc"
 
 
+using namespace std;
+
+
 int main () 
 
 {
@@ -46,16 +49,16 @@ int main ()
   int result;
   
   
-  std:: cout << "Enter a number for calculations: ";
+  cout << "Enter a number for calculations: ";
   
-  std:: cin >> number;
+  cin >> number;
   
   
-  if (std:: cin.get () != '\n')
+  if (cin.get () != '\n')
   
   {
     
-    std:: cout << "Please enter a validated number: " << "\n";
+    cout << "Please enter a validated number: " << "\n";
     
   }
   
@@ -67,11 +70,11 @@ int main ()
   result = square_sum - sum_squares;
   
   
-  std:: cout << "The result of the sum of the squares is: " << sum_squares << "\n";
+  cout << "The result of the sum of the squares is: " << sum_squares << "\n";
   
-  std:: cout << "The result of the square of the sum is: " << SquareSum (number) << "\n";
+  cout << "The result of the square of the sum is: " << SquareSum (number) << "\n";
   
-  std:: cout << "The difference between the square of the sum and the sum of the squares is: " << result << "\n";
+  cout << "The difference between the square of the sum and the sum of the squares is: " << result << "\n";
   
   
   return 0;
