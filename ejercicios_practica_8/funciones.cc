@@ -208,7 +208,7 @@ double FindMinimum (int N, double vector [])
     if (minimum > vector [i])
     
     {
-      
+        
       minimum = vector [i];
       
     }
@@ -217,7 +217,7 @@ double FindMinimum (int N, double vector [])
   
   
   // We declare a statement of type "return", which will return the largest element of the vector, which is found in the variable of type "double" called "minimum".
-  
+
   return minimum;
   
 }
