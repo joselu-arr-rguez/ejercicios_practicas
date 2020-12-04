@@ -39,7 +39,6 @@ int main ()
 
 {
     
-  
   int number;
   
   
@@ -97,6 +96,5 @@ int main ()
   
   
   return 0;
-  
-    
+   
 }

@@ -50,7 +50,7 @@ using namespace std;
 int main () 
 
 {
-
+  
   string first;
 
   string last; 
@@ -83,6 +83,5 @@ int main ()
 
   
   return 0;
-  
     
 }

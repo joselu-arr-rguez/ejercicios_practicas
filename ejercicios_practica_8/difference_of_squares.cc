@@ -39,7 +39,6 @@ int main ()
 
 {
       
-  
   int number;
   
   int sum_squares;
@@ -79,5 +78,4 @@ int main ()
   
   return 0;
   
-    
 }

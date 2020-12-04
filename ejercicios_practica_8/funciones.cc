@@ -37,8 +37,7 @@
 int SumSquares (int number) 
 
 {
-      
-  
+        
   // We declare a variable of type "int", which we call "sum" and we declare it to (0).
   
   int sum = 0;
@@ -54,21 +53,20 @@ int SumSquares (int number)
   for (int i = 1; i <= number; i++) 
   
   {
-  
-  square = i * i;
-  
-  
-  // We put a (+ =) and say that (sum = sum + square).
-  
-  sum += square;
+    
+    square = i * i;
+    
+    
+    // We put a (+ =) and say that (sum = sum + square).
+    
+    sum += square;
     
   }
   
   
-  // We declare a "return" statement, to return the variable of type "int", which we had denoted by "sum", since the function returns an integer.
+  // We declare a statement of type "return", to return the variable of type "int", which we had denoted by "sum", since the function returns an integer.
   
   return sum;
-  
   
 }
 
@@ -78,7 +76,6 @@ int SumSquares (int number)
 int SquareSum (int number) 
 
 {
-  
   
   // We declare a variable of type "int", which we call "sum" and we declare it to (0).
   
@@ -95,14 +92,14 @@ int SquareSum (int number)
   for (int i = 1; i <= number; i++)
   
   {
-  
-  sum += i;
-  
     
-  // We declare the function "pow", which tells us that the first element of the parentheses (in this case it is the result of the sum, made earlier) is the base of the exponent. And the second number in the parentheses (in this case the (2)), is the exponent.
-  
-  square = pow (sum, 2);
-  
+    sum += i;
+    
+    
+    // We declare the function "pow", which tells us that the first element of the parentheses (in this case it is the result of the sum, made earlier) is the base of the exponent. And the second number in the parentheses (in this case the (2)), is the exponent.
+    
+    square = pow (sum, 2);
+    
   }
   
   
@@ -110,16 +107,14 @@ int SquareSum (int number)
   
   return square;
   
-  
 }
 
 
-// We declare the average function, to which we pass the size of the vector (N) as an input parameter, using a variable of type "int" and the vector (N) itself. This function will return a variable of the type "double", which will be the result of the average.
+// We declare the "Average" function, to which we pass the size of the vector (N) as an input parameter, using a variable of type "int" and the vector (N) itself. This function will return a variable of the type "double", which will be the result of the average.
 
 double Average (int N, double vector []) 
 
 {
-  
   
   // We declare a variable of type "double", which we call "average".
   
@@ -130,15 +125,15 @@ double Average (int N, double vector [])
   
   double sum;
   
-
-  // We declare a loop (for), which will go through the vector, position by position. Inside this it will save in the variable of the type "int" called "sum", the result of adding all the elements of the vector.
+  
+  // We declare a loop "for", which will go through the vector, position by position. Inside this it will save in the variable of the type "int" called "sum", the result of adding all the elements of the vector.
   
   for (int i = 0; i < N; i++)
   
   {
-  
-  sum += vector [i]; 
-  
+      
+    sum += vector [i]; 
+    
   }
   
   
@@ -151,69 +146,125 @@ double Average (int N, double vector [])
   
   return average;
   
-  
 }
 
 
-// En la funcion Find Higher le pasamos el tamaño del vector asi como el propio vector y buscaremos entre esos elementos el elemento mayor devolviendolo como mreturn
+// We declare the "FindHigher" function, to which we pass the size of the vector as well as the vector itself, and it will search among those elements for the largest element of the vector, and it will return it to us with a "return" statement.
 
-double FindHigher (int N, double vector []) {
-// Guardamos en Highre el primer elemento del vector para mas adelante poder hacer comporaraciones
-double higher = vector [0];
-// Utilixzaremos el for para recorrer el vector pero estavez dede la posicion 1 ya que la posicion 0 se encuentra guardada en la variable higher
-for (int i = 1; i < N; i++)
+double FindHigher (int N, double vector []) 
+
 {
-  // En el if vamos comparando hasta encontara el elemento de mayor tamaño y guaradndolo en la variable higher
-  if (higher < vector [i])
+  
+  // The program will save the first element of the vector in the "Find Higher" function, so that later it can make comparisons with it.
+  
+  double higher = vector [0];
+  
+  
+  // We declare a "for" loop, which will go through the vector but this time from position (1), since in position (0) it will be stored in the variable of type "double" called "higher".
+  
+  for (int i = 1; i < N; i++)
+  
   {
-    higher = vector [i];
+    
+    // We declare a statement of the "if" type, which will compare the elements of the vector until it finds the element with the largest size in it, and when it finds it, it will save it in the variable of the "double" type called "higher".
+    
+    if (higher < vector [i])
+    
+    {
+      
+      higher = vector [i];
+      
+    }
+    
   }
   
+  
+  // We declare a statement of type "return", which will return the largest element of the vector, which is found in the variable of type "double" called "higher".
+  
+  return higher;
+  
 }
 
-// DEvolvemos el elemento mas grande del vector que se encuentra en higher
-return higher;
 
-
-}
+// We declare the "FindMinimum" function, to which we pass the size of the vector as well as the vector itself, and it will search among those elements for the largest element of the vector, and it will return it to us with a "return" declaration.
 
 double FindMinimum (int N, double vector [])
 
 {
-double minimum = vector [0];
-
-for (int i = 1; i < N; i++)
-{
-  if (minimum > vector [i])
+  
+  // The program will save the first element of the vector in the "Find Minimum" function, so that later it can make comparisons with it.
+  
+  double minimum = vector [0];
+  
+  
+  // We declare a "for" loop, which will go through the vector but this time from position (1), since in position (0) it will be stored in the variable of type "double" called "minimum".
+  
+  for (int i = 1; i < N; i++)
+   
   {
-    minimum = vector [i];
+    
+    // We declare a statement of the "if" type, which will compare the elements of the vector until it finds the element with the largest size in it, and when it finds it, it will save it in the variable of the "double" type called "minimum".  
+    
+    if (minimum > vector [i])
+    
+    {
+      
+      minimum = vector [i];
+      
+    }
+    
   }
   
-}
-return minimum;
-
-
-}
-
-// Essta funcion se encaragar la desviacion estandar del contendio del vector pasandole por parametros el tamaño N y el propio vector
-double StandardDeviation (int N, double vector []){
-
-// Declaramos la variable varianza y descvaicion y llamamos a la funcion media que usamos antes porque la necesitarewmos
-  double variance, deviation;
-
-  double average = Average (N, vector);
-
-
-// Usamos un for ara recorer el vector
-for (int i = 0; i < N; i++)
-{
- // Calculamo sla varianza que es el resultado de la suma de la propia varianza mas la exponencial del contendo del vecor menos la media y elevao a l cuadardo
-variance = variance + pow ((vector [i] - average), 2);
+  
+  // We declare a statement of type "return", which will return the largest element of the vector, which is found in the variable of type "double" called "minimum".
+  
+  return minimum;
   
 }
-// Calculamso la desvaicion en el que se sua la raiz cuadrada de la varianzaq entre el numero de elementos del vector menos 1
-deviation = sqrt (variance / N - 1);
-// devolvemos el resultadop de la desvaicion
-return deviation;
+
+
+// We declare the "StandardDeviation" function, which will take care of the standard deviation of the content of the vector, passing the size (N) and the vector itself as parameters.
+
+double StandardDeviation (int N, double vector [])
+
+{
+    
+  
+  // We declare a variable of type "double", which we call "deviation".
+  
+  double deviation;
+  
+  
+  // We declare a variable of type "double", which we call "variance".
+  
+  double variance;
+  
+  
+  // We declare again the "Average" function that we had used before, because now we will need it.
+  
+  double average = Average (N, vector);
+  
+  
+  // We declare a "for" loop, to traverse the vector.
+  
+  for (int i = 0; i < N; i++)
+  
+  {
+    
+    // We declare again a "double" type variable called "variance", which is the result of the sum of the "variance" itself plus the exponential of the vector content minus the mean and squared (to make this calculation, we have had to declare the function of type "pow").
+    
+    variance = variance + pow ((vector [i] - average), 2);
+    
+  }
+  
+  
+  // We declare again the variable of type "double" called "deviation", which will calculate this by means of a calculation, in which the square root of the variable of type "double" called "variance" is added, between the number of vector elements, minus (1).
+  
+  deviation = sqrt (variance / N - 1);
+  
+  
+  // We declare a statement of type "return", which will return the result made previously of the variable of type "double" called "deviation".
+  
+  return deviation;
 
 }
