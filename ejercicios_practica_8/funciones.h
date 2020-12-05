@@ -1,4 +1,4 @@
-/* Escriba un programa (funciones.h) que contenga las declaraciones de las diferentes funciones que se utilizan en el programa principal para resolver el ejercicio en cuestión. *
+/* Escriba un programa llamdao "funciones.h", que contenga las declaraciones de las diferentes funciones, que se utilizan en el programa principal, para resolver el ejercicio en cuestión. *
 
 * Universidad de La Laguna
 

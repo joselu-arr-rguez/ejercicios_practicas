@@ -1,4 +1,4 @@
-/* Escriba un programa (funciones.cc) que contenga el código (definiciones) de las funciones declaradas en el fichero de cabecera.
+/* Escriba un programa llamado "funciones.cc", que contenga el código (definiciones), de las funciones declaradas en el fichero de cabecera.
 
 * Universidad de La Laguna
 

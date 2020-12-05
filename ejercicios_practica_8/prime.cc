@@ -1,4 +1,4 @@
-/* Escriba un programa (prime.cc) que tome por línea de comandos un número natural, (N) e imprima en pantalla el n-ésimo número primo. *
+/* Escriba un programa llamado "prime.cc", que tome por línea de comandos un número natural (N), que imprima en pantalla el n-ésimo número primo. *
 
 * Universidad de La Laguna
 
@@ -85,6 +85,7 @@ int main ()
       
       vector [i] = x;
       
+
       i ++;
      
     }
@@ -92,7 +93,7 @@ int main ()
   }
   
   
-  cout << vector [number - 1] << "\n";  
+  cout << "The (n-th) prime number of the natural number (N) entered is: " << vector [number - 1] << "\n";  
   
   
   return 0;

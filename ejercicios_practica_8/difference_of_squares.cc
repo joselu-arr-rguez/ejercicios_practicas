@@ -1,4 +1,4 @@
-/* Escriba un programa (difference_of_squares.cc) que tome como parámetro pasado por línea de comandos un número natural (N), e imprima en pantalla la diferencia entre el cuadrado de la suma de los primeros (N) números naturales, y la suma de los cuadrados de esos mismos números. *
+/* Escriba un programa llamado "difference_of_squares.cc", que tome como parámetro pasado por línea de comandos un número natural (N), que imprima en pantalla, la diferencia entre el cuadrado de la suma de los primeros (N) números naturales, y la suma de los cuadrados de esos mismos números. *
 
 * Universidad de La Laguna
 

@@ -1,4 +1,4 @@
-/* Desarrolle un programa (vector_statistics.cc) que tome como parámetro por línea de comandos tres números naturales ((N), (M) y (P)) y cree un vector de (N) componentes del tipo double, cuyos valores hayan sido generados aleatoriamente en el rango [M, P]. 
+/* Desarrolle un programa llamado "vector_statistics.cc", que tome como parámetro por línea de comandos tres números naturales ((N), (M) y (P)), y cree un vector de (N) componentes del tipo double, cuyos valores hayan sido generados aleatoriamente en el rango [M, P]. 
 
 · El programa dispondrá de funciones que calculen:
 
@@ -50,7 +50,6 @@ int main ()
 
 {
           
-  
   int N;
   
   int M;
@@ -84,7 +83,9 @@ int main ()
     
     value = M + rand () % P;
     
+    
     vector [i] = value;
+    
     
     cout << vector [i] << " ";
     
@@ -101,6 +102,5 @@ int main ()
   
   
   return 0;
-  
   
 }

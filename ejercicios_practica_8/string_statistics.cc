@@ -1,14 +1,14 @@
-/* Desarrolle un programa (vector_statistics.cc) que tome como parámetro por línea de comandos tres números naturales ((N), (M) y (P)) y cree un vector de (N) componentes del tipo double, cuyos valores hayan sido generados aleatoriamente en el rango [M, P]. 
+/* Desarrolle un programa llamado "string_statistics.cc", que inicialice un vector constante de (10) componentes del tipo "std:: string", es decir, un vector con (10) cadenas de texto. Elija las cadenas que utilizará para inicializar el vector.
 
-· El programa dispondrá de funciones que calculen:
+· Haga que el programa imprima en pantalla, para cada una de las cadenas de texto del vector: 
 
-- La media
+- La longitud de la cadena.
 
-- La desviación estándar
+- El primer carácter de la cadena.
 
-- El máximo
+- El último carácter de la cadena.
 
-- El mínimo de los valores almacenados en el vector. *
+- Sí/No la cadena en cuestión contiene el texto "abracadabra". *
 
 
 * Universidad de La Laguna
@@ -23,7 +23,7 @@
 
 * @title Práctica 8: Funciones (2). GitHub
 
-* @file vector_statistics.cc
+* @file string_statistics.cc
 
 * @author José Luis Arribas Rodríguez <alu0101416700@ull.edu.es>
 
@@ -31,7 +31,7 @@
 
 * @version 1.0
 
-* @see https://github.com/joselu-arr-rguez/ejercicios_practicas/blob/main/ejercicios_practica_8/vector_statistics.cc
+* @see https://github.com/joselu-arr-rguez/ejercicios_practicas/blob/main/ejercicios_practica_8/string_statistics.cc
 
 */
 
@@ -42,9 +42,10 @@
 
 #include "funciones.cc"
 
+#include "string"
+
+
 using namespace std;
-
-
 
 
 int main () 
@@ -52,35 +53,45 @@ int main ()
 {
   
   string first;
-
+  
   string last; 
   
+  
   const int kComponents = 10;
-
- 
-
-  cout << "Write something ..." << "\n";
-
-  string word;
-
-  getline(cin, word);
-
-  int lon = word.length ();
-
-  char vector [kComponents];
-
-
+  
+  int lon;
+  
+  
+  cout << "Enter (10) text strings: " << "\n";
+  
+  
+  string vector [kComponents];
+  
   
   for (int i = 0; i <= kComponents; i++)
+  
   {
-    vector[i]=word[i];
-
-    cout<<vector[i];
+      
+    getline (cin, vector [i]);
+    
+    
+    lon = vector [i]. size ();
+    
+    
+    first = vector [0];
+    
+    
+    last = vector [kComponents - 1];
+    
   }
   
   
-  cout << "The size of vector is:  " << lon;
-
+  cout << "The size of the vector is: " << lon << "\n";
+  
+  cout << "The first character of the string is: " << first << "\n";
+  
+  cout << "The last character of the string is: " << last << "\n";
+  
   
   return 0;
     
