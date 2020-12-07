@@ -25,6 +25,9 @@
 */
 
 
+using namespace std;
+
+
 int SumSquares (int number);
 
 int SquareSum (int number);
@@ -39,4 +42,4 @@ double FindMinimum (int N, double vector []);
 double StandardDeviation (int N, double vector []);
 
 
-bool IsAbracadabra (std:: string vector []);
+bool ItIsAbracadabra (string vector []);

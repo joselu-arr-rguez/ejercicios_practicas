@@ -57,51 +57,64 @@ int main ()
   string last; 
   
   
+  bool flag;
+  
   const int kComponents = 10;
   
-  int lon;
+  int size;
   
-  bool flag;
- 
-  
-  
+    
   string vector [kComponents];
   
   
   for (int i = 0; i < kComponents; i++)
   
   {
-    cout << "Enter string number: " << i + 1 << "\n";
-
+    
+    cout << "Enter the text belonging to the vector string number: " << i + 1 << "\n";
+    
+    
     getline (cin, vector [i]);
     
     
-    lon = vector [i]. size ();
+    size = vector [i]. size ();
     
     
     first = vector [0];
     
     
     last = vector [kComponents - 1];
-
-    cout << "The size of the vector is: " << lon << "\n";
     
-  }
-  
-  flag = IsAbracadabra (vector);
-  
-  if (flag == true)
-  {
-    cout << "The text contains the word abracadabra" << "\n";
-  }else
-  {
-    cout << "The text not contains the word abracadabra" << "\n";
+    
+    cout << "The size of the vector is: " << size << "\n";
+    
   }
   
   
   cout << "The first character of the string is: " << first << "\n";
   
   cout << "The last character of the string is: " << last << "\n";
+  
+  
+  flag = ItIsAbracadabra (vector);
+  
+  
+  if (flag == true)
+  
+  {
+    
+    cout << "One of the (10) strings in the vector contains the text (abracadabra)." << "\n";
+    
+  }
+  
+  
+  else
+  
+  {
+    
+    cout << "One of the (10) strings in the vector, does not contain the text (abracadabra)." << "\n";
+    
+  }
   
   
   return 0;
