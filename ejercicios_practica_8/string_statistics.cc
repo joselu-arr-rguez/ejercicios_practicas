@@ -62,16 +62,17 @@ int main ()
   int lon;
   
   
-  cout << "Enter (10) text strings: " << "\n";
+ 
   
   
   string vector [kComponents];
   
   
-  for (int i = 0; i <= kComponents; i++)
+  for (int i = 0; i < kComponents; i++)
   
   {
-      
+    cout << "Enter string number: " << i + 1 << "\n";
+
     getline (cin, vector [i]);
     
     
@@ -82,11 +83,13 @@ int main ()
     
     
     last = vector [kComponents - 1];
+
+    cout << "The size of the vector is: " << lon << "\n";
     
   }
   
   
-  cout << "The size of the vector is: " << lon << "\n";
+  
   
   cout << "The first character of the string is: " << first << "\n";
   
