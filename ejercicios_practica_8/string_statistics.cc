@@ -61,7 +61,7 @@ int main ()
   
   int lon;
   
-  
+  bool flag;
  
   
   
@@ -88,7 +88,15 @@ int main ()
     
   }
   
+  flag = IsAbracadabra (vector);
   
+  if (flag == true)
+  {
+    cout << "The text contains the word abracadabra" << "\n";
+  }else
+  {
+    cout << "The text not contains the word abracadabra" << "\n";
+  }
   
   
   cout << "The first character of the string is: " << first << "\n";

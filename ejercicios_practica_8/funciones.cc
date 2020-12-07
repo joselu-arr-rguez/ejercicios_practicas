@@ -23,7 +23,7 @@
 * @see https://github.com/joselu-arr-rguez/IB-2020-2021-Practica8-Funciones/blob/main/funciones.cc
 
 */
-
+#include "string"
 
 // We have included the library "math.h" to be able to use the function "pow".
 
@@ -268,3 +268,30 @@ double StandardDeviation (int N, double vector [])
   return deviation;
 
 }
+
+
+  bool IsAbracadabra (std:: string vector [])
+  
+  {
+
+  
+
+  std:: string word = "abracadabra";
+
+  for (int i = 0; i < 10; i++)
+  {
+    if (vector [i] == word)
+    {
+      return true;
+    }else
+    {
+      return false;
+    }
+    
+    
+  }
+
+  return false;
+  
+
+  }

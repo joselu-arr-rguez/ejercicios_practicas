@@ -37,3 +37,6 @@ double FindHigher (int N, double vector []);
 double FindMinimum (int N, double vector []);
 
 double StandardDeviation (int N, double vector []);
+
+
+bool IsAbracadabra (std:: string vector []);
