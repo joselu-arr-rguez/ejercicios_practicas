@@ -10,40 +10,57 @@ int main() {
 
     bool q;
 
-
-         std::cout <<"  p         q          p & q   "<<"\n";
+        std::cout << "\n";
         
-         std::cout <<"-----     -----     -----------"<<"\n";
-
-        std::cout <<true<<" "<<true<<" "<<(true && true)<<"\n";
-
-        std::cout <<false<<" "<<false<<" "<<(false && false)<<"\n";
-
-        std::cout <<true<<" "<<false<< " " <<(true && false)<<"\n";
-
-        std::cout <<false<< " " <<true<< " " <<(false && true)<<"\n";
-
-
-         std::cout <<"  p         q          p || q  "<<"\n";
+        std::cout << "\n";
         
-         std::cout <<"-----     -----     -----------"<<"\n";
+        std::cout <<"  p         q          p & q   "<<"\n";
+        
+        std::cout <<"-----     -----     -----------"<<"\n";
 
-        std::cout <<true<< " "<<true<< " "<<(true || true)<<"\n";
+        std::cout <<"  "<< true<<"         "<<true<<"            "<<(true && true)<<"\n";
 
-        std::cout <<false<< " " <<false<< " " <<(false || false)<<"\n";
+        std::cout <<"  "<<false<<"         "<<false<<"            "<<(false && false)<<"\n";
 
-        std::cout <<true<< " " <<false<< " " <<(true || false)<<"\n";
+        std::cout <<"  "<<true<<"         "<<false<< "            " <<(true && false)<<"\n";
 
-        std::cout <<false<< " " <<true<< " " <<(false || true)<<"\n";
+        std::cout <<"  "<<false<< "         " <<true<< "            " <<(false && true)<<"\n";
 
 
-        std::cout <<"  p        !p  "<<"\n";  
 
-            std::cout <<"-----     -----"<<"\n";
+        std::cout << "\n";
+        
+        std::cout << "\n";
 
-         std::cout <<true<<"         "<<!true<<"\n";
+        std::cout <<"  p         q          p || q   "<<"\n";
+        
+        std::cout <<"-----     -----     -----------"<<"\n";
 
-        std::cout <<false<<"         "<<!false<<"\n";
+        std::cout <<"  "<< true<<"         "<<true<<"            "<<(true || true)<<"\n";
+
+        std::cout <<"  "<<false<<"         "<<false<<"            "<<(false || false)<<"\n";
+
+        std::cout <<"  "<<true<<"         "<<false<< "            " <<(true || false)<<"\n";
+
+        std::cout <<"  "<<false<< "         " <<true<< "            " <<(false || true)<<"\n";
+
+        
+
+        std::cout << "\n";
+
+        std::cout << "\n";
+
+        std::cout <<"  p         !p       "<<"\n";
+        
+        std::cout <<"-----     ------    "<<"\n";
+
+        std::cout <<"  "<<true<<"         "<<!true<<"\n";
+
+        std::cout <<"  "<<false<<"         "<<!false<<"\n";
+
+        std::cout << "\n";
+        
+        std::cout << "\n";
 
 
   
