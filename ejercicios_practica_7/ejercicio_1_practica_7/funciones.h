@@ -25,3 +25,6 @@ int DayMonth (int number, int year);
 bool LeapYear (unsigned int year);
 
 
+bool IsPalindromeNumber (int number);
+
+

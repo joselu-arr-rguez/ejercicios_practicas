@@ -83,7 +83,7 @@ factorial = factorial * i;
 
 
 }
-#include <math.h>
+
 
 for (int i = 0; i < num_terms; i++)
 {
@@ -154,6 +154,37 @@ default: number_days=30;
 
 }
 return number_days;
+
+}
+
+bool IsPalindromeNumber (int number){
+
+int aux = 0;
+
+int rest = 0;
+
+int num_inv = 0;
+
+aux = number;
+
+while (aux > 0)
+{
+    rest = aux % 10;
+
+    aux = aux / 10;
+
+    num_inv = num_inv * 10 + rest;
+}
+
+if (num_inv == number)
+{
+    return true;
+}
+
+else
+{
+    return false;
+}
 
 }
 
