@@ -48,11 +48,11 @@ int main () {
 
     }
 
+    higher = lower = vector [0];
+
     for (int i = 0; i < KVectorSize; ++i)
 
     {
-
-        higher = lower = vector [0];
 
 
         if (vector [i] > higher) higher = vector [i];
@@ -62,7 +62,11 @@ int main () {
     }
 
 
-    printf ("The higher number is %d and the smallest number is %d /n", higher, lower);
+    
+
+    std:: cout << "The higher number is: " << higher << "\n";
+
+    std:: cout << "The smallest number is: " << lower << "\n";
 
 
     std:: cout << "The average of the vector is: " << media / KVectorSize << "\n";

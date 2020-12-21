@@ -8,8 +8,6 @@ int main() {
 
     int number;
     std::string word;
-    std::string prev_word= "Morning";
-    std::string other_word= "Afternoon";
     std::string long_word;
     std::string short_word;
     std::cout<<"Enter a number of words: ";
@@ -21,10 +19,13 @@ int main() {
         std::cin>>vector[i];
         std::cout<<"The word "<<i+1<<": "<<vector[i]<<"\n";
     }
-    
-    for (int j = 0; j < number; j++){
-        long_word=short_word= vector[0];
-        if(vector[j].length()>long_word.length()) long_word=vector[j];
+    long_word=short_word=word=  vector[0];
+    for (int j = 1; j < number; j++){
+       
+        if(vector[j].length()>long_word.length()){
+            
+            long_word=vector[j];
+        }        
         if(vector[j].length()<short_word.length()) short_word=vector[j];
             
     }
