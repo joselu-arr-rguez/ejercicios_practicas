@@ -75,7 +75,7 @@ int factorial (int number) {
 
 int factorial = 1;
 
-for (int i = 1; i <= number; i++)
+for (int i = 2; i <= number; i++)
 {
     
 factorial = factorial * i;
@@ -83,7 +83,12 @@ factorial = factorial * i;
 
 
 }
+return factorial;
+}
 
+double MyExp (double exponent, unsigned num_terms) {
+
+double t, s = 0;
 
 for (int i = 0; i < num_terms; i++)
 {
