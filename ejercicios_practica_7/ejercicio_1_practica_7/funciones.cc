@@ -1,5 +1,7 @@
 //
 
+#include <iostream>
+
 #include <math.h>
 
 bool IsPrime (int number) {
@@ -192,6 +194,7 @@ else
 }
 
 }
+
 
 
 

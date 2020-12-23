@@ -10,27 +10,62 @@
 
 int main() {
 
-  int number;
-  std:: cout << "Enter the number to check if it is palindrome: ";
+  int number_1;
 
-  std:: cin >> number;
+  int number_2;
 
+  int vector [1000];
+
+  int producto =0;
+
+  int number_choose = 0;
+
+  int vector_2 [1000];
+
+  std:: cout << "Enter the first number in the range: ";
+
+  std:: cin >> number_1;
+
+  std:: cout << "Enter the second number in the range: ";
+
+  std:: cin >> number_2;
+
+  for (int i = 1; i <= number_2; i++)
+  {
+    for (int j = 1; j <= number_2; j++)
+    {
+      producto = i * j;
+
+      vector [i-1] = producto;
+
+      std:: cout << vector [i-1] << " ";
+    }
+    
+  }
+  
+ 
 
   bool flag;
 
-  flag = IsPalindromeNumber (number);
-
-  if (flag)
-
+  for (int i = 0; i <=1000; i++)
   {
-   std:: cout << "The number is a palindrome" << "\n"; 
-  }
+    number_choose = vector [i];
 
-  else
+    flag = IsPalindromeNumber (number_choose);
 
-  {
-   std:: cout << "The number is not a palindrome" << "\n";
+    if (flag){
+
+      vector_2 [i] = number_choose;
+
+      std:: cout << vector_2 [i] << " ";
+    }
+
+    
   }
+  
+
+  
+ 
   
   return 0;
 
