@@ -20,7 +20,7 @@ int main() {
 
   int number_choose = 0;
 
-  int vector_2 [1000];
+  int z=0;
 
   std:: cout << "Enter the first number in the range: ";
 
@@ -36,28 +36,33 @@ int main() {
     {
       producto = i * j;
 
-      vector [i-1] = producto;
+      vector [z] = producto;
 
-      std:: cout << vector [i-1] << " ";
+      z++;
+
+      std:: cout << vector [z-1] << " ";
     }
     
   }
-  
+   std::cout <<  "\n";
  
 
   bool flag;
 
-  for (int i = 0; i <=1000; i++)
+  for (int i = 0; i <=81; i++)
   {
+
     number_choose = vector [i];
 
     flag = IsPalindromeNumber (number_choose);
 
     if (flag){
 
-      vector_2 [i] = number_choose;
+      std:: cout << "The number palindrome are: "<< " ";
 
-      std:: cout << vector_2 [i] << " ";
+      std:: cout << number_choose<< " ";
+
+      std::cout <<  "\n";
     }
 
     
