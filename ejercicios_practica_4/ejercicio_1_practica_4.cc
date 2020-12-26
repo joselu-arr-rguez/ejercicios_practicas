@@ -12,7 +12,7 @@
 
 * @title Práctica 4: Fundamentos de Programación Básica
 
-* @file ejercicio_1_práctica_4
+* @file ejercicio_1_práctica_4.cc
 
 * @author José Luis Arribas Rodríguez <alu0101416700@ull.es>
 

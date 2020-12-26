@@ -12,7 +12,7 @@
 
 * @title Práctica 4: Fundamentos de Programación Básica
 
-* @file ejercicio_2_práctica_4
+* @file ejercicio_2_práctica_4.cc
 
 * @author José Luis Arribas Rodríguez <alu0101416700@ull.es>
 
@@ -24,7 +24,7 @@
 
 *        Para ello, el programa solicitará al usuario que indique de cuántos euros dispone.
 
-*        Una vez introducido la cantidad de euros, el programa mostrará los yuanes equivalentes sabiendo que, un yen es equivalente a (0.0081 €) de acuerdo a "Morningstar for Currency and Coinbase for Cryptocurrency".
+*        Una vez introducido la cantidad de euros, el programa imprimirá en pantalla los yuanes equivalentes sabiendo que, un yen es equivalente a (0.0081 €) de acuerdo a "Morningstar for Currency and Coinbase for Cryptocurrency".
 
 
 
