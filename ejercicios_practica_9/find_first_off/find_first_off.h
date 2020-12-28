@@ -1,0 +1,1 @@
+int FindLetter (string vector, char letter);
