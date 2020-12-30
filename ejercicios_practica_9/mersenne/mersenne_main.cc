@@ -40,23 +40,30 @@ using namespace std;
 int main ()
 
 {
+ 
+ int number;
 
-  int number;
+ unsigned int kValue = 524288;
 
 
   cout << "Enter a number: " << "\n";
 
   cin >> number;
 
+  if (number < 8)
+  {
+    cout << "Mersenne primes numbers still: " << kValue << "\n";
 
-
-
-
-
-    
-  cout << "Mersenne primes numbers still: " << number << "\n";
+    MersennePrimes(kValue);
+  }
   
-  MersennePrimes(number);
+  else
+  {
+    cout << "El número debe estar entre 1 y 7: " << "\n";
+  }
+  
+
+  
 
   return 0;
    

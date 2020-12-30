@@ -30,15 +30,15 @@
 
 using namespace std;
 
-void GeneratePrimes(bool* primes, int number){
+void GeneratePrimes(bool* primes, int kValue){
 
-fill(primes, primes + number + 1, true);
+fill(primes, primes + kValue + 1, true);
 
-for (int p = 2; p * p <= number; ++p)
+for (int p = 2; p * p <= kValue; ++p)
 {
   if (primes[p] == true)
   {
-    for (int i = p * 2; i <= number; i+=p)
+    for (int i = p * 2; i <= kValue; i+=p)
     {
       primes[i] = false;
     }
@@ -50,23 +50,24 @@ for (int p = 2; p * p <= number; ++p)
 
 }
 
-void MersennePrimes(int number){
+void MersennePrimes(int kValue){
 
-bool primes[number + 1];
+bool primes[kValue + 1];
 
-GeneratePrimes(primes, number);
+GeneratePrimes(primes, kValue);
 
-for (int i = 2; ((1<<i)-1) <= number; ++i)
+for (int i = 2; ((1<<i)-1) <= kValue; ++i)
 {
-  int prime = (1<<i)-1;
+  int num = (1<<i)-1;
 
-  if (primes [prime])
+  if (primes [num])
   {
-    cout << prime << " " << "\n";
+    cout << num << " ";
   }
   
 
 }
+
 
 
 }

@@ -1,4 +1,4 @@
-void GeneratePrimes(bool* primes, int number);
+void GeneratePrimes(bool* primes, int kValue);
 
-void MersennePrimes(int number);
+void MersennePrimes(int kValue);
 
