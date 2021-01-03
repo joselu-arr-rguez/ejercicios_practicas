@@ -18,7 +18,7 @@
 
 * @copyright José Luis Arribas Rodríguez (2021).
 
-* @date 1 de enero de 2021.
+* @date 3 de enero de 2021.
 
 * @brief Escribir un programa en (C++), que solicite al usuario la cantidad de monedas de (1, 5, 10, 20 y 50) céntimos que tiene, así también como 
 

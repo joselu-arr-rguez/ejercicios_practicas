@@ -18,7 +18,7 @@
 
 * @copyright José Luis Arribas Rodríguez (2021).
 
-* @date 1 de enero de 2021.
+* @date 3 de enero de 2021.
 
 * @brief Escribir un programa en (C++), que permita determinar el número de yenes, equivalente a una cierta cantidad de euros. 
 

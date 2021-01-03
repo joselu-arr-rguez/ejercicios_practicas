@@ -18,7 +18,7 @@
 
 * @copyright José Luis Arribas Rodríguez (2021).
 
-* @date 1 de enero de 2021.
+* @date 3 de enero de 2021.
 
 * @brief  Escriba un programa en (C++), que calcule la distancia entre 2 puntos (A) y (B), en el espacio cartesiano de 3 dimensiones.
 

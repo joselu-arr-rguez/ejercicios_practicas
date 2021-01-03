@@ -18,7 +18,7 @@
 
 * @copyright José Luis Arribas Rodríguez (2021).
 
-* @date 1 de enero de 2021.
+* @date 3 de enero de 2021.
 
 * @brief Escribir un programa en (C++), que calcule y muestre la media de tres calificaciones, de alumnos de la asignatura de "Informática Básica". 
 
@@ -59,13 +59,13 @@ int main() {
   double average_mark;
   
   
-
+  
   cout << "Enter the mark of the first student, for the (Basic Computer Science) course: ";
   
   cin >> first_student_mark;
   
   
-
+  
   if (first_student_mark <= 10)
   
   {
@@ -104,7 +104,9 @@ int main() {
       
       {
         
+        
         cout << "Error. The mark must be within the numerical range (0.0) and (10.0)." << "\n";
+        
         
       }
       
@@ -115,8 +117,10 @@ int main() {
       
     {
       
+      
       cout << "Error. The mark must be within the numerical range (0.0) and (10.0)." << "\n";
-     
+      
+      
     }
    
   }
@@ -126,7 +130,9 @@ int main() {
   
   {
     
+    
     cout << "Error. The mark must be within the numerical range (0.0) and (10.0)." << "\n";
+    
     
   }
   
@@ -134,5 +140,5 @@ int main() {
     
   return 0;
   
-  
+   
 }
