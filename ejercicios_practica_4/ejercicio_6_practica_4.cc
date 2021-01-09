@@ -1,52 +1,51 @@
 /**
-
-
-* Universidad de La Laguna.
-
-* Escuela Superior de Ingeniería y Tecnología.
-
-* Grado en Ingeniería Informática.
-
-* Informática Básica.
-
-
-* @title Práctica 4: Fundamentos de Programación Básica.
-
-* @file ejercicio_6_practica_4.cc
-
-* @author José Luis Arribas Rodríguez <alu0101416700@ull.es>.
-
-* @copyright José Luis Arribas Rodríguez (2021).
-
-* @date 3 de enero de 2021.
-
-* @brief  Escriba un programa en (C++), que calcule la distancia entre 2 puntos (A) y (B), en el espacio cartesiano de 3 dimensiones.
-
-*         Los puntos (A) y (B), tienen tres coordenadas cada uno. 
-
-
-*         Es decir:
-
-*         A = (x_1, y_1, z_1)
-
-*         B = (x_2, y_2, z_2)
-
-
-*         El usuario, introducirá los valores de (x_1, y_1, z_1, x_2, y_2, z_2) respectivamente.
-
-*         Una vez, introducidos los valores, el programa calculará e imprimirá en pantalla, la distancia entre los puntos, donde la distancia entre
-
-*         los puntos (A) y (B), viene definida por la siguiente fórmula:
-
-*         distance (A, B) = sqrt ((x_2 - x_1) ^ 2 + (y_2 - y_1) ^ 2 + (z_2 - z_1) ^ 2)
-
-
-
-* @bug No hay "bugs" conocidos.
-
-* @see https://github.com/joselu-arr-rguez/ejercicios_practicas/blob/main/ejercicios_practica_4/ejercicio_6_practica_4.cc
-
-
+  
+  
+  * Universidad de La Laguna.
+  
+  * Escuela Superior de Ingeniería y Tecnología.
+  
+  * Grado en Ingeniería Informática.
+  
+  * Informática Básica.
+  
+  
+  * @title Práctica 4: Fundamentos de Programación Básica.
+  
+  * @file ejercicio_6_practica_4.cc
+  
+  * @author José Luis Arribas Rodríguez <alu0101416700@ull.es>.
+  
+  * @copyright José Luis Arribas Rodríguez (2021).
+  
+  * @date 9 de enero de 2021.
+  
+  * @brief  Escriba un programa en (C++), que calcule la distancia entre 2 puntos (A) y (B), en el espacio cartesiano de 3 dimensiones.
+  
+  *         Los puntos (A) y (B), tienen tres coordenadas cada uno. 
+  
+  
+  *         Es decir:
+  
+  *         A = (x_1, y_1, z_1)
+  
+  *         B = (x_2, y_2, z_2)
+  
+  
+  *         El usuario introducirá los valores de (x_1, y_1, z_1, x_2, y_2, z_2), respectivamente.
+  
+  *         Una vez, introducidos los valores, el programa calculará e imprimirá en pantalla, la distancia entre los puntos, donde la distancia entre
+  
+  *         los puntos (A) y (B), viene definida por la siguiente fórmula:
+  
+  *         distance (A, B) = sqrt ((x_2 - x_1) ^ 2 + (y_2 - y_1) ^ 2 + (z_2 - z_1) ^ 2)
+  
+  
+  * @bug No hay "bugs" conocidos.
+  
+  * @see https://github.com/joselu-arr-rguez/ejercicios_practicas/blob/main/ejercicios_practica_4/ejercicio_6_practica_4.cc
+  
+  
 */
 
 
@@ -63,7 +62,7 @@ using namespace std;
 
 
 int main() {
-  
+    
   
   int x_1;
   
@@ -144,7 +143,7 @@ int main() {
   cout << "The distance between the two points (A) and (B), is: " << distance_between_A_B << " m." << "\n";
   
   
-
+  
   return 0;
   
   

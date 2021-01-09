@@ -1,40 +1,39 @@
 /**
-
-
-* Universidad de La Laguna.
-
-* Escuela Superior de Ingeniería y Tecnología.
-
-* Grado en Ingeniería Informática.
-
-* Informática Básica.
-
-
-* @title Práctica 4: Fundamentos de Programación Básica.
-
-* @file ejercicio_3_practica_4.cc
-
-* @author José Luis Arribas Rodríguez <alu0101416700@ull.es>.
-
-* @copyright José Luis Arribas Rodríguez (2021).
-
-* @date 3 de enero de 2021.
-
-* @brief Escribir un programa en (C++), que solicite al usuario la cantidad de monedas de (1, 5, 10, 20 y 50) céntimos que tiene, así también como 
-
-*        los billetes de (5, 10, 20, 50, 100, 200 y 500) euros.
-
-*        Una vez, introducidas las cantidades de dinero, el programa calculará e imprimirá en pantalla, la cantidad total de dinero de la que
-
-*        dispone.
-
-
-
-* @bug No hay "bugs" conocidos.
-
-* @see https://github.com/joselu-arr-rguez/ejercicios_practicas/blob/main/ejercicios_practica_4/ejercicio_3_practica_4.cc
-
-
+  
+  
+  * Universidad de La Laguna.
+  
+  * Escuela Superior de Ingeniería y Tecnología.
+  
+  * Grado en Ingeniería Informática.
+  
+  * Informática Básica.
+  
+  
+  * @title Práctica 4: Fundamentos de Programación Básica.
+  
+  * @file ejercicio_3_practica_4.cc
+  
+  * @author José Luis Arribas Rodríguez <alu0101416700@ull.es>.
+  
+  * @copyright José Luis Arribas Rodríguez (2021).
+  
+  * @date 9 de enero de 2021.
+  
+  * @brief Escribir un programa en (C++), que solicite al usuario la cantidad de monedas de (1, 5, 10, 20 y 50) céntimos que tiene, así también como 
+  
+  *        los billetes de (5, 10, 20, 50, 100, 200 y 500) euros que tiene.
+  
+  *        Una vez, introducidas las cantidades de dinero, el programa calculará e imprimirá en pantalla, la cantidad total de dinero de la que
+  
+  *        dispone.
+  
+  
+  * @bug No hay "bugs" conocidos.
+  
+  * @see https://github.com/joselu-arr-rguez/ejercicios_practicas/blob/main/ejercicios_practica_4/ejercicio_3_practica_4.cc
+  
+  
 */
 
 
@@ -384,7 +383,7 @@ int main() {
   result_five_hundred_euros;
   
   
-  cout << "The total amount of money you have, according to the amounts of money entered, is: " << total_result << " €" << "\n";
+  cout << "The total amount of money you have, according to the amounts of money entered, is: " << "€" << total_result << "\n";
   
   
   
