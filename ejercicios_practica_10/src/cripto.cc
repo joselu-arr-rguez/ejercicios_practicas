@@ -18,12 +18,11 @@
  */
 
 #include <iostream>
-#include <cstdlib>    /// exit
-#include <stdio.h>
-#include <conio.h>
-#include <string>
-#include <algorithm>
+#include <cstdlib>    // exit
 
+#include <stdio.h>
+#include <string>
+#include <cstring>
 using namespace std;
 
 #include "funciones_cripto.h"    
@@ -35,7 +34,11 @@ using namespace std;
 int main (int argc, char* argv[]) {
   Usage(argc, argv);
   std::string limit = argv[1];
-
-  
+  char texto[100]; 
+  char alfabeto[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  cout << "Ingrese frase" << "\n";
+  gets(texto);
+  printf("%t",texto);
+  Cesar(texto,alfabeto);
   return 0;
 }

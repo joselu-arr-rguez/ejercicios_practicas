@@ -21,9 +21,9 @@
 #include <cstdlib>    // exit
 
 #include <stdio.h>
-#include <conio.h>
 #include <string>
-#include <algorithm>
+#include <cstring>
+
 
 using namespace std;
 
@@ -49,4 +49,68 @@ void Usage(int argc, char *argv[]) {
     std::cout << kHelpText << std::endl;
     exit(EXIT_SUCCESS);
   }
+}
+
+void Cesar(char texto[], char alfabeto[]){
+  int j;
+  for(int i=0;i < strlen(texto); i++){
+   
+   j= 0;
+
+   while (j < 52) {
+
+   if (texto[i] == alfabeto[j] && (j < 23 && j < 49)){
+
+   texto [i] = alfabeto [j + 3];
+
+   }
+    if (texto[i] == alfabeto[j] && (j >= 23 && j < 26)){
+
+      if (texto [i] == "x" ) {
+
+        texto [i] == "a";
+
+      }
+
+      if (texto [i] == "y" ) {
+
+        texto [i] == "b";
+
+      }
+      if (texto [i] == "z" ) {
+
+        texto [i] == "c";
+
+      }
+      j = 52;
+
+    }
+    j++;
+if (texto[i] == alfabeto[j] && (j >= 49 && j < 52)){
+
+      if (texto [i] == "X" ) {
+
+        texto [i] == "A";
+
+      }
+
+      if (texto [i] == "Y" ) {
+
+        texto [i] == "B";
+
+      }
+      if (texto [i] == 'Z' ) {
+
+        texto [i] == 'C';
+
+      }
+      j = 52;
+
+    }
+    j++;
+    
+   }
+  }
+
+  cout << "El texto cifrado es este" << texto << "\n";
 }

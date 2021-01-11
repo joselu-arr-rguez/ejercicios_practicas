@@ -11,11 +11,11 @@
  */
 
 #include <iostream>
-#include <cstdlib>    /// exit
+#include <cstdlib>    // exit
+
 #include <stdio.h>
-#include <conio.h>
-#include <string>
-#include <algorithm>
+#include <string.h>
+
 
 using namespace std;
 
@@ -30,28 +30,8 @@ operación:  Operación a realizar en el fichero \
 -: desencriptar el fichero";
 
 void Usage(int argc, char *argv[]);
+void Cesar(char texto[], char alfabeto[]);
 
-struct Cesar {
-
-static string Cifrar(string text, int key);
-
-static string Descifrar(string text, int key);
-
-}
-
-inline string Cesar :: Cifrar(string text, int key) { 
-
-transform(text.begin(), text.end(), text.begin(), toupper);
-
-string other_key = " "
-
-}
-
-inline string Cesar :: Descifrar(string text int key) {
-
-
-
-}
 
 
 
