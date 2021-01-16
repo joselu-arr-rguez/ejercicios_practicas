@@ -33,11 +33,10 @@ using namespace std;
  */
 int main (int argc, char* argv[]) {
   Usage(argc, argv);
-  std::string limit = argv[1];
+  char texto = argv[1];
   char texto[100]; 
   char alfabeto[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  cout << "Ingrese frase" << "\n";
-  gets(texto);
+  fgets(texto, 1000,stdin);
   printf("%t",texto);
   Cesar(texto,alfabeto);
   return 0;

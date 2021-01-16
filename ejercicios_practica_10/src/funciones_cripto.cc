@@ -66,20 +66,20 @@ void Cesar(char texto[], char alfabeto[]){
    }
     if (texto[i] == alfabeto[j] && (j >= 23 && j < 26)){
 
-      if (texto [i] == "x" ) {
+      if (texto [i] == 'x ') {
 
-        texto [i] == "a";
-
-      }
-
-      if (texto [i] == "y" ) {
-
-        texto [i] == "b";
+        texto [i] == 'a';
 
       }
-      if (texto [i] == "z" ) {
 
-        texto [i] == "c";
+      if (texto [i] == 'y' ) {
+
+        texto [i] == 'b';
+
+      }
+      if (texto [i] == 'z' ) {
+
+        texto [i] == 'c';
 
       }
       j = 52;
@@ -88,15 +88,15 @@ void Cesar(char texto[], char alfabeto[]){
     j++;
 if (texto[i] == alfabeto[j] && (j >= 49 && j < 52)){
 
-      if (texto [i] == "X" ) {
+      if (texto [i] == 'X' ) {
 
-        texto [i] == "A";
+        texto [i] == 'A';
 
       }
 
-      if (texto [i] == "Y" ) {
+      if (texto [i] == 'Y' ) {
 
-        texto [i] == "B";
+        texto [i] == 'B';
 
       }
       if (texto [i] == 'Z' ) {
