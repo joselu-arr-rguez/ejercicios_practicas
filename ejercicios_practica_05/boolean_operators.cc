@@ -27,11 +27,11 @@
   
   * @date 17 de enero de 2021.
   
-  * @brief Escribir un programa en (C++), llamado "boolean_operators.cc", que imprima en pantalla, la tabla de verdad de los operadores lógicos (and,
+  * @brief Escribir un programa en (C++), llamado "boolean_operators.cc", que imprima en pantalla, la tabla de verdad, de los operadores lógicos
   
-  *        or, not).
+  *        (and, or, not).
   
-  *        El programa, deberá utilizar, un par de variables "booleanas" y mostrar el resultado, de operar ambas variables, con todos sus posibles
+  *        El programa, deberá utilizar, un par de variables "booleanas" y mostrar el resultado, de operar, ambas variables, con todos sus posibles
   
   *        valores y con cada uno, de los operadores lógicos.
   

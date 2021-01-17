@@ -27,15 +27,15 @@
   
   * @date 17 de enero de 2021.
   
-  * @brief Escribir un programa en (C++), llamado "references.cc", que declare cuatro variables, de diferentes tipos, y las inicialice, utilizando,
+  * @brief Escribir un programa en (C++), llamado "references.cc", que declare cuatro variables, de diferentes tipos y las inicialice, utilizando,
   
   *        los diferentes mecanismos, de inicialización de variables, que suministra el lenguaje. 
   
-  *        El programa, declarará asimismo, otras tantas referencias, a las variables anteriores, e imprimirá en pantalla, los valores de esas
+  *        El programa, declarará asimismo, otras tantas referencias, a las variables anteriores, e imprimirá en pantalla, los valores, de esas
   
   *        referencias. 
   
-  *        ¿Son iguales los valores de las referencias, que los de las variables referenciadas?.
+  *        ¿Son iguales, los valores de las referencias, que los de las variables referenciadas?.
   
   
   * @bug No hay "bugs" conocidos.

@@ -29,7 +29,7 @@
   
   * @brief Escribir un programa en (C++), llamado "arithmetic_operators.cc", que declare e inicialice, variables de tipos aritméticos, e imprima en
   
-  *        pantalla, el resultado de operar esas variables, con todos los operadores que pueda utilizar con ellas. 
+  *        pantalla, el resultado, de operar esas variables, con todos los operadores, que pueda utilizar, con ellas. 
   
   *        Utilice, operadores aritméticos y de comparación. 
   
@@ -42,11 +42,11 @@
   *        Para cada uno, de los operadores considerados.
   
   
-  *        Revise asimismo el artículo "https://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/",
+  *        Revise asimismo, el artículo "https://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/",
   
-  *        particularmente la sección, "Epsilon comparisons".
+  *        particularmente, la sección, "Epsilon comparisons".
 
-  *        Trate de incorporar, en el programa, lo que haya aprendido, leyendo las referencias anteriores.
+  *        Trate de incorporar, en el programa, lo que haya aprendido, leyendo, las referencias anteriores.
   
   
   * @bug No hay "bugs" conocidos.
@@ -82,7 +82,9 @@ bool AlmostEqualRelative(float A, float B, float maxRelDiff = FLT_EPSILON) {
   
   
   
-  // We declare the variables of the type "float", called "A" and "B", which are matched, to their values, with a greater number of decimal places, using the function, called "fabs".
+  // We declare the variables of the type "float", called "A" and "B", which are matched, to their values, with a greater number of decimal places,
+  
+  // using the function, called "fabs".
   
   
   A = fabs(A);
@@ -93,7 +95,7 @@ bool AlmostEqualRelative(float A, float B, float maxRelDiff = FLT_EPSILON) {
   
   // We declare a variable, of the type "float", which, we call "diff", being equal, to the subtraction of the absolute value, between the variables,
   
-  // of the type "float, called" A "and" B "(previously declared ).
+  // of the type "float, called "A" and "B" (previously declared).
   
   
   float diff = fabs(A - B);

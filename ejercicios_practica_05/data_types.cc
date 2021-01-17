@@ -29,7 +29,7 @@
   
   * @brief Escribir en (C++), un programa llamado "data_types.cc", que imprima en pantalla, la cantidad de memoria, que utiliza su compilador, para
   
-  *        almacenar, cada uno de los tipos básicos, del lenguaje.
+  *        almacenar, cada uno, de los tipos básicos, del lenguaje.
   
   *        Investigue, para ello, el operador "sizeof". 
   
@@ -38,9 +38,9 @@
   *        El tipo de datos "int", se representa utilizando: 4 bytes.
   
   
-  *        Para cada uno, de los tipos, de datos del lenguaje. Haga que las líneas, se muestren comenzando, con los tipos de lenguaje, que utilizan,
+  *        Para cada uno, de los tipos, de datos del lenguaje. Haga que las líneas, se muestren, comenzando, con los tipos de lenguaje, que utilizan,
   
-  *        menos cantidad de memoria y finalizando con los que ocupan mayor cantidad.
+  *        menos cantidad, de memoria y finalizando, con los que ocupan, mayor cantidad.
   
   
   * @bug No hay "bugs" conocidos.
