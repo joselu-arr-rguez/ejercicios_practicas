@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <string>
 #include <cstring>
+
 using namespace std;
 
 #include "funciones_cripto.h"    
@@ -33,11 +34,11 @@ using namespace std;
  */
 int main (int argc, char* argv[]) {
   Usage(argc, argv);
-  char texto = argv[1];
-  char texto[100]; 
-  char alfabeto[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  fgets(texto, 1000,stdin);
-  printf("%t",texto);
-  Cesar(texto,alfabeto);
+  std::string parametro1 = argv[1];
+  char texto[100];
+  strcpy(texto,parametro1.c_str());
+
+  cout << "Este texto de aquí es el original " << texto << "\n";
+  Cesar();
   return 0;
 }

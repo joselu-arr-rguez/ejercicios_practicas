@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <string>
 #include <cstring>
+#include <string.h>
 
 
 using namespace std;
@@ -51,66 +52,60 @@ void Usage(int argc, char *argv[]) {
   }
 }
 
-void Cesar(char texto[], char alfabeto[]){
-  int j;
-  for(int i=0;i < strlen(texto); i++){
-   
-   j= 0;
+void Cesar(){
+  FILE *dat1,*dat2;
+  char nombre_1[50];
+  char nombre_2[50];
+  char c;
+  int trans;
 
-   while (j < 52) {
+  printf("Seleccione traslacion de encriptacion ");
+  scanf("%d", &trans);
 
-   if (texto[i] == alfabeto[j] && (j < 23 && j < 49)){
+  printf("Nombre del archivo a codificar ");
+  scanf("%s", &nombre_1);
 
-   texto [i] = alfabeto [j + 3];
+  printf("Nombre delfichero donde guardar la codificacion ");
+  scanf("%s", &nombre_2);
+  if(fopen(nombre_1, "r") == NULL)
 
-   }
-    if (texto[i] == alfabeto[j] && (j >= 23 && j < 26)){
+    cout << "El fichero no existe" << "\n";
 
-      if (texto [i] == 'x ') {
+  else {
 
-        texto [i] == 'a';
+    dat1 = fopen(nombre_1, "r");
+
+    dat2 = fopen(nombre_2, "w");
+
+
+    fscanf(dat1, "%c",&c);
+
+    while(!feof(dat1))
+    {
+
+      if((c>='A')&&(c<='Z'))
+      {
+
+        c=((c+trans-'A')%('Z'-'A'+1))+'A';
 
       }
+      else if((c>='a')&&(c<='z'))
+      {
 
-      if (texto [i] == 'y' ) {
-
-        texto [i] == 'b';
-
-      }
-      if (texto [i] == 'z' ) {
-
-        texto [i] == 'c';
-
-      }
-      j = 52;
+       c= ((c+trans-'a')%('z'-'a'+1))+'a';
 
     }
-    j++;
-if (texto[i] == alfabeto[j] && (j >= 49 && j < 52)){
 
-      if (texto [i] == 'X' ) {
+    fprintf(dat2,"%c",c);
 
-        texto [i] == 'A';
+    fscanf(dat1,"%c",&c);
 
-      }
-
-      if (texto [i] == 'Y' ) {
-
-        texto [i] == 'B';
-
-      }
-      if (texto [i] == 'Z' ) {
-
-        texto [i] == 'C';
-
-      }
-      j = 52;
-
-    }
-    j++;
-    
-   }
   }
+  fclose(dat1);
+  
+  fclose(dat2);
 
-  cout << "El texto cifrado es este" << texto << "\n";
+
+  
+}
 }

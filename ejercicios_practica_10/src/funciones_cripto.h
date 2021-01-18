@@ -30,7 +30,7 @@ operación:  Operación a realizar en el fichero \
 -: desencriptar el fichero";
 
 void Usage(int argc, char *argv[]);
-void Cesar(char texto[], char alfabeto[]);
+void Cesar();
 
 
 
