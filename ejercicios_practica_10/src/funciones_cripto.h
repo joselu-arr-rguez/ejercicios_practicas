@@ -32,6 +32,10 @@ operación:  Operación a realizar en el fichero \
 void Usage(int argc, char *argv[]);
 void Cesar();
 
+void Descifrar();
+void CifradoXor();
+void Menu();
+
 
 
 

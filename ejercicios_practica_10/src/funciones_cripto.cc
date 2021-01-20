@@ -109,3 +109,232 @@ void Cesar(){
   
 }
 }
+
+void Descifrar() {
+  FILE *dat1,*dat2;
+  char nombre_1[50];
+  char nombre_2[50];
+  char c;
+  int trans;
+
+  printf("Seleccione traslacion de encriptacion ");
+  scanf("%d", &trans);
+
+  printf("Nombre del archivo a decodificar ");
+  scanf("%s", &nombre_1);
+
+  printf("Nombre delfichero donde guardar la decodificacion ");
+  scanf("%s", &nombre_2);
+  if(fopen(nombre_1, "r") == NULL)
+
+    cout << "El fichero no existe" << "\n";
+
+  else {
+
+    dat1 = fopen(nombre_1, "r");
+
+    dat2 = fopen(nombre_2, "w");
+
+
+    fscanf(dat1, "%c",&c);
+
+    while(!feof(dat1))
+    {
+
+      if((c>='A')&&(c<='Z'))
+      {
+
+        c=((c-trans-'A')%('Z'-'A'+1))+'A';
+
+      }
+      else if((c>='a')&&(c<='z'))
+      {
+
+       c= ((c-trans-'a')%('z'-'a'+1))+'a';
+
+    }
+
+    fprintf(dat2,"%c",c);
+
+    fscanf(dat1,"%c",&c);
+
+  }
+  fclose(dat1);
+  
+  fclose(dat2);
+
+
+  
+}
+}
+
+void CifradoXor() {
+
+  FILE *dat1,*dat2;
+  char nombre_1[50];
+  char nombre_2[50];
+  char c;
+  string clave;
+  char key;
+
+
+  printf("Clave a utilizar: ");
+  cin >> clave;
+  
+  printf("Nombre del archivo a decodificar ");
+  scanf("%s", &nombre_1);
+
+  printf("Nombre delfichero donde guardar la decodificacion ");
+  scanf("%s", &nombre_2);
+  if(fopen(nombre_1, "r") == NULL)
+
+    cout << "El fichero no existe" << "\n";
+
+  else {
+
+    dat1 = fopen(nombre_1, "r");
+
+    dat2 = fopen(nombre_2, "w");
+
+
+    fscanf(dat1, "%c",&c);
+    
+    while(!feof(dat1))
+    {
+    for(int i=0; i<50;i++){
+      int j = i% clave.length();
+      int a= int (clave[j]);
+      int b = int(c);
+      c = char(b ^ a);
+    }
+      
+      
+
+
+
+    fprintf(dat2,"%c",c);
+
+    fscanf(dat1,"%c",&c);
+
+  }
+  fclose(dat1);
+  
+  fclose(dat2);
+
+
+  
+}  
+
+}
+
+void Menu(){
+  int exit = 0;
+
+  string option;
+
+  string option_2;
+
+  do 
+  
+  {
+
+    cout << "Elegimos la opción a mostrar: " << "\n";
+
+
+    cout << "1 -> CifradoXor" << "\n";
+
+    cout << "2 -> CifradoCesar" << "\n";
+
+    cout << "3 -> Salir" << "\n";
+
+    cin >> option;
+
+    int x = atoi(option.c_str());
+
+    switch (x)
+
+    {
+
+      case 1 : 
+      
+      {
+        cout << "Elegimos la opción a mostrar: " << "\n";
+
+
+        cout << "1 -> Cifrar" << "\n";
+
+        cout << "2 -> Descifrar" << "\n";
+
+        cin >> option_2;
+
+        int y = atoi(option_2.c_str());
+
+        if(y==1 || y==2){
+
+          cout << "Aplicando algoritmo de cifrado XOR: " << "\n";
+          CifradoXor();
+
+        }else{
+
+          cout << "No ha seleccionado una opcion correcta: " << "\n";
+          break;
+        }
+        
+
+      }
+      
+      case 2 : 
+      {
+       
+      cout << "Elegimos la opción a mostrar: " << "\n";
+
+
+        cout << "1 -> Cifrar" << "\n";
+
+        cout << "2 -> Descifrar" << "\n";
+
+        cin >> option_2;
+
+        int y = atoi(option_2.c_str());
+
+        if(y==1){
+          cout << "Ha seleccionado la opcion de Cifrar por Cesar: " << "\n";
+          Cesar();
+
+        }else if(y==2){
+          cout << "Ha seleccionado la opcion de Descifrar por Cesar: " << "\n";
+          Descifrar();
+        }else{
+          cout << "No ha seleccionado una opcion correcta: " << "\n";
+          break;
+        }
+          
+          
+        }
+        
+
+      case 3 : 
+      {
+      exit=1;
+       cout << "Saliendo...... " << "\n";
+  
+        break;
+      }
+
+      default : 
+
+      {
+
+        cout << "Opcion incorrecta" << "\n";
+
+        break;
+
+      }  
+    }
+   
+
+}
+while (exit==0); 
+}
+
+

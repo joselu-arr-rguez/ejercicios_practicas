@@ -38,7 +38,7 @@ int main (int argc, char* argv[]) {
   char texto[100];
   strcpy(texto,parametro1.c_str());
 
-  cout << "Este texto de aquí es el original " << texto << "\n";
-  Cesar();
+  Menu();
+
   return 0;
 }
